@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+
+$:.unshift File.join(File.dirname(__FILE__), '../lib')
+
+require 'snippets'
+
+snippet = Snippets::Entry.new(
+    :user   => 'dave',
+    :date   => '2015-08-05',
+    :body   => 'I did a thing'
+)
+snippet.save
