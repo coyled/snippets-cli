@@ -2,11 +2,44 @@
 
 $:.unshift File.join(File.dirname(__FILE__), '../lib')
 
+require 'choice'
+require 'date'
 require 'snippets'
 
+Choice.options do
+    header 'Usage: snippets [options]'
+
+    option :date, :required => true do
+        long '--date=YYYY-MM-DD'
+        desc 'Entry date'
+    end
+
+    option :body, :required => true do
+        long '--body=BODY'
+        cast String
+        desc 'Body of snippet entry, i.e. what you did'
+    end
+
+    option :version do
+        long '--version'
+        desc 'Show version'
+        action do
+            puts Snippets::VERSION
+        end
+    end
+
+    option :help do
+        short '-h'
+        long '--help'
+        desc 'Show this message'
+    end
+end
+
+user = ENV['USER']
+
 snippet = Snippets::Entry.new(
-    :user   => 'dave',
-    :date   => '2015-08-05',
-    :body   => 'I did a thing'
+    :user   => user,
+    :date   => Choice[:date],
+    :body   => Choice[:body]
 )
 snippet.save
