@@ -5,6 +5,12 @@ CLI tool to collect and report on snippets (a Googley list of things
 completed).
 
 
+Status
+------
+
+Still under development.  This code probably isn't useful yet.
+
+
 Requirements
 ------------
 
