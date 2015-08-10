@@ -10,6 +10,8 @@ Status
 
 Still under development.  This code probably isn't useful yet.
 
+[![Build Status](https://semaphoreci.com/api/v1/projects/242992ab-ea4e-43b3-8715-751bcb36b083/506821/shields_badge.svg)](https://semaphoreci.com/coyled/snippets-cli)
+
 
 Requirements
 ------------
