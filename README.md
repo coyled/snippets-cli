@@ -14,6 +14,8 @@ Still under development.  This code probably isn't useful yet.
 
 [![Build Status](https://travis-ci.org/coyled/snippets-cli.svg?branch=master)](https://travis-ci.org/coyled/snippets-cli)
 
+[![Code Climate](https://codeclimate.com/github/coyled/snippets-cli/badges/gpa.svg)](https://codeclimate.com/github/coyled/snippets-cli)
+
 
 Requirements
 ------------
