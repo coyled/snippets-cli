@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-gem 'aws-sdk', '~> 2'
+gem 'aws-sdk-dynamodb', '~> 1'
 gem 'choice'
 gem 'rspec', :group => [:development, :test]
 gem 'uuidtools'
