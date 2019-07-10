@@ -1,8 +1,9 @@
 language: ruby
 rvm:
-  - 2.3.8
+  - 2.6.3
 script: bundle exec rspec
 before_install:
   - gem update --system
   - gem --version
-  - bundle update
+  - gem install bundler -v '~> 2'
+  - bundle --version
