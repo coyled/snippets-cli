@@ -27,5 +27,5 @@ bill.
 
 Also:
 
-  * Ruby (tested with v2.2.2)
+  * Ruby (tested with v2.6)
   * Bundler
