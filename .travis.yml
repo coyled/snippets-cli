@@ -5,4 +5,5 @@ script: bundle exec rspec
 before_install:
   - gem update --system
   - gem --version
-  - bundle update
+  - gem install bundler -v '~> 2'
+  - bundle --version
