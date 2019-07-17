@@ -14,8 +14,9 @@ module Snippets
         end
 
         def date
-            @date.gsub!(/-/, '')
-            @date.to_i
+            date = +@date
+            date.gsub!(/-/, '')
+            date.to_i
         end
 
         def body
