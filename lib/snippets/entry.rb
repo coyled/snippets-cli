@@ -1,6 +1,8 @@
 module Snippets
+    #
+    # a snippet
+    #
     class Entry
-
         attr_reader :user, :date, :body
 
         def initialize(params = {})
@@ -13,20 +15,13 @@ module Snippets
             @user
         end
 
-        def date
-            date = +@date
-            date.gsub!(/-/, '')
-            date.to_i
-        end
-
         def body
             @body
         end
 
-        def save(params = {})
+        def save
             storage = Storage.new(self)
             storage.save
         end
-
     end
 end
